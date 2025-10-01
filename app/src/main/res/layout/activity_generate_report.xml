@@ -3,24 +3,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    >
+    android:padding="16dp">
 
-    <TextView
+    <Button
+        android:id="@+id/btnGenerateReport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="24dp"
+        android:text="Generate Student Results Report"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="40dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No student results found. Click the button to generate report."
         android:gravity="center"
-        android:text="Student Results Report"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:padding="32dp"
+        android:visibility="gone" />
 
-    <TextView
-        android:id="@+id/tvResults"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudentResults"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Loading..."
-        android:textSize="16sp" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

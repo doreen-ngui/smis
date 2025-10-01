@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.smis.network.RetrofitInstance
 import com.example.smis.network.StudentResult
+import com.example.smis.network.ApiResponse
 import kotlinx.coroutines.launch
 
 class ResultsViewModel : ViewModel() {
@@ -25,7 +26,8 @@ class ResultsViewModel : ViewModel() {
             try {
                 val response = RetrofitInstance.apiService.getStudentResults()
                 if (response.isSuccessful && response.body()?.success == true) {
-                    _studentResults.value = response.body()?.data ?: emptyList()
+                    // Fixed line:
+                    _studentResults.value = (response.body()?.data as? List<StudentResult>) ?: emptyList()
                 } else {
                     _errorMessage.value = "Failed to fetch results"
                 }

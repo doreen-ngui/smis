@@ -1,5 +1,6 @@
 package com.example.smis.network
 
+import com.example.smis.data.StudentResult
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -17,7 +18,6 @@ interface ApiService {
     suspend fun getStudentResults(): Response<ApiResponse<List<StudentResult>>>
 }
 
-// Add these data classes
 data class StudentRequest(
     val name: String,
     val regNumber: String,
@@ -30,3 +30,6 @@ data class Student(
     val regNumber: String,
     val course: String
 )
+
+
+
