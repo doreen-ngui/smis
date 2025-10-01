@@ -20,4 +20,15 @@ The SMIS Mobile App is an Android-based student management system developed in K
 
 | Login Screen | Register Student | View Students | Dashboard |
 |--------------|------------------|----------------|-----------|
-| ![login](screenshots/login.jpg) | ![register](screenshots/registerstudent.jpg) | ![list](screenshots/viewstudent.jpg) | ![dashboard](screenshots/dashboard.jpg) |
+| ![login](screenshots/login.jpg) | ![register](screenshots/register.jpg) | ![list](screenshots/view_student.jpg) | ![dashboard](screenshots/dashboard.jpg) |
+
+---
+
+## 🧪 Backend Setup (Laravel)
+
+The Laravel backend handles student performance data and exposes the `/students/results` API endpoint.
+
+### 🔗 Repository
+[smis-laravel-backend](https://github.com/yourusername/smis-laravel-backend)
+
+
