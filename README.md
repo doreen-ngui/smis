@@ -20,4 +20,4 @@ The SMIS Mobile App is an Android-based student management system developed in K
 
 | Login Screen | Register Student | View Students | Dashboard |
 |--------------|------------------|----------------|-----------|
-| ![login](screenshots/login.jpg) | ![register](screenshots/register.jpg) | ![list](screenshots/view_students.jpg) | ![dashboard](screenshots/dashboard.jpg) |
+| ![login](screenshots/login.jpg) | ![register](screenshots/registerstudent.jpg) | ![list](screenshots/viewstudent.jpg) | ![dashboard](screenshots/dashboard.jpg) |
